@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React-day1</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="root"></div>
+    <div id="root2"></div>
     <script>
-        const heading = document.createElement('h1')
-        console.log(heading)
-        heading.innerHTML = 'Vishwajeet writing from JS'
-        
-        const root = document.getElementById('root')
-        root.appendChild(heading)
+      const heading = document.createElement("h1");
+      const heading2 = document.createElement("h2");
+      console.log(heading);
+      console.log(heading2);
+      heading.innerHTML = "Vishwajeet writing from JS";
+      heading2.innerHTML =
+        "Not only Vishwajeet, but Vishalji ODEDRA also writing from JS";
+
+      const root = document.getElementById("root");
+      const root2 = document.getElementById("root2");
+      root.appendChild(heading);
+      root2.appendChild(heading2);
     </script>
-</body>
+  </body>
 </html>
